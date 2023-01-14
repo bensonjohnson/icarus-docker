@@ -4,4 +4,4 @@ chmod -R 777 /home/steam/
 /home/steam/steamcmd.sh +@sSteamCmdForcePlatformType windows +force_install_dir /home/steam/icarus +login anonymous +app_update 2089300  +quit
 cp /home/steam/steamworks_sdk/*64.dll /home/steam/icarus
 winecfg
-xvfb-run wine /home/steam/icarus/IcarusServer.exe -Log -UserDir='C:\icarus' -SteamServerName="${SERVERNAME}" -PORT="17777" -QueryPort="27015"
+xvfb-run wine /home/steam/icarus/IcarusServer.exe -SteamServerName="${SERVERNAME}" -PORT="17777" -QueryPort="27015"

@@ -25,4 +25,5 @@ RUN chmod -R 755 /home/
 COPY entry.sh /opt/
 RUN chmod +x /opt/entry.sh
 
-ENTRYPOINT /opt/entry.sh
+#ENTRYPOINT /opt/entry.sh
+ENTRYPOINT [ "/bin/bash" ]
